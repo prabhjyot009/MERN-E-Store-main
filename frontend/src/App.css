@@ -1,0 +1,420 @@
+/* CSS FOR HEADER */
+.search-bar {
+  border-radius: 8px 0px 0px 8px;
+  width: 400px;
+  border: 1px solid #8d99f4;
+  padding: 8px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar:focus {
+  border-color: #6373f1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search-button {
+  background-color: #8d99f4;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #8d99f4;
+  padding: 8px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Media queries for Header */
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.row>* {
+  padding: 0.5rem !important;
+
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.card {
+  padding: 0 !important;
+}
+
+.btn {
+  background-color: #8d99f4;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-img-top {
+  height: 170px;
+  object-fit: contain;
+}
+
+.card-img-top:hover {
+  transform: scale(1.07);
+}
+
+button {
+  background-color: #8d99f4;
+  border: none;
+  margin: auto;
+  border-radius: 8px;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #f79210;
+}
+
+.price {
+  color: #8d99f4;
+}
+
+.add-to-cart {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.card-text {
+  line-height: 1.5em;
+  height: 3em;
+  /* height is 3x line-height, so two lines will display */
+  overflow: hidden;
+  /* prevents extra lines from being visible */
+}
+
+.card {
+  border-radius: 0px !important;
+}
+
+.card-title {
+  line-height: 0.9em;
+  height: 1.8em;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.logo {
+  height: 3rem;
+  width: 10rem;
+}
+
+/* ========================Cart Page CSS============================= */
+.mainContainer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.items {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.items .card-header {
+  border-radius: 6px 6px 0 0 !important;
+  border: 1px solid rgb(0, 0, 0, 0.175);
+  background-color: #8d99f4 !important;
+}
+
+.card-header:first-child {
+  background-color: #8d99f4;
+}
+
+.q-text {
+  margin-top: -12px;
+}
+
+.innercols {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-cost {
+  background-color: #8d99f4;
+}
+
+.cart-img {
+  height: 170px;
+  width: 170px;
+  object-fit: contain;
+
+}
+
+.mainContainer button {
+  background-color: #8d99f4;
+  padding: 5px 12px;
+  font-weight: bolder;
+  border-radius: 6px;
+  border: none;
+}
+
+.mainContainer button:hover,
+.mainContainer .btn:hover {
+  background-color: #f79210;
+}
+
+.mainContainer .btn {
+  background-color: #8d99f4;
+}
+
+.mainContainer #quantity {
+  padding: 8px 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mainContainer .total {
+  font-size: 17px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 900px) {
+  button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .rating {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ================== CSS for Login Screen ============  */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8d99f4;
+  padding: 30px 30px 55px 30px;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-form input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #8d99f4;
+}
+
+.login-form button,
+.shipping-form button {
+  background-color: #8d99f4;
+  border: 2px solid #f79210;
+  padding: 8px;
+  border-radius: 8px;
+  width: 300px;
+  font-size: 18px;
+}
+
+.login-form button:hover,
+.shipping-form button:hover {
+  background-color: #dbae6f;
+  color: white;
+}
+
+.login-form label,
+.shipping-form label {
+  font-size: 18px;
+}
+
+/* Media queries for Login Page */
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 350px;
+  }
+
+  .shipping-form {
+    width: 350px !important;
+  }
+
+  .shipping-form input {
+    width: 300px !important;
+  }
+}
+
+/* ====================css for shipping form=============== */
+.shipping-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8d99f4;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.shipping-form input {
+  width: 400px;
+  padding: 6px;
+  border: 1px solid #f79210;
+}
+
+/* ==========================CSS FOR Payment ============================== */
+
+.payment form {
+  width: 250px;
+  background-color: #8d99f4;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: auto;
+}
+
+.payment form input {
+  width: 20px;
+  padding: 6px;
+  border: 1px solid #f79210;
+  margin-bottom: 10px;
+}
+
+.img-thumbnail {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+/*  =========== Sidebar CSS =========== */
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #8d99f4;
+  transition: 0.5s;
+  color: black;
+}
+
+.app-container {
+  transition: 0.5s;
+}
+
+.active-container {
+  margin-left: 240px;
+}
+
+.active-nav {
+  left: 0;
+}
+
+.search .container {
+  margin-left: calc(1.6 * var(--bs-gutter-x)) !important;
+}
+
+.cart-empty {
+  font-size: 10rem !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -10px;
+}
+
+/*css for sidebar menu*/
+.side-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-navbar ul li {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.side-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-navbar ul li a:hover {
+  color: #f79210;
+}
+
+.side-navbar ul li i {
+  margin-right: 10px;
+}
+
+.side-navbar .active {
+  background-color: #f79210;
+}
+
+.side-navbar .active a {
+  color: white;
+}
+
+.side-navbar .active i {
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: white;
+
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+
+  transition: 0.5s;
+
+}
